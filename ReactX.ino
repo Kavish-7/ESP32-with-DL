@@ -48,50 +48,50 @@ Adafruit_SSD1306 display(
 // WIFI
 // =====================================================
 
-const char* ssid = "MARY THIRD";
-const char* password = "MARYT@1234";
+const char* ssid = ""; //wifi name
+const char* password = ""; //password
 // =====================================================
 // NETWORK
 // =====================================================
 
 // ESP32 DEV MODULE
-IPAddress local_IP(192, 168, 0, 158);
+IPAddress local_IP(, , , ); //local host ip
 
-IPAddress gateway(192, 168, 0, 1);
+IPAddress gateway(, , , ); //local host gateway
 
 IPAddress subnet(
-  255,
-  255,
-  252,
-  0
-);
+  ,
+  ,
+  ,
+  
+);  // local host subnet
 
 IPAddress primaryDNS(
-  192,
-  168,
-  8,
-  1
-);
+  ,
+  ,
+  ,
+  
+);  //local primaryDNS
 
 IPAddress secondaryDNS(
-  8,
-  8,
-  8,
-  8
-);
+  ,
+  ,
+  ,
+  
+);  //local secondaryDNS
 
 // =====================================================
 // OTHER DEVICES
 // =====================================================
 
 // ESP32-CAM
-const char* CAMERA_IP = "192.168.0.182";
+const char* CAMERA_IP = ""; //ESP32 CAM IP 
 // Laptop
-const char* LAPTOP_IP = "192.168.0.3";
+const char* LAPTOP_IP = ""; //Host IP
 
 // Flask AI
 const char* FLASK_URL =
-  "http://192.168.0.3:5000/camera";
+  ""; //Flask URL
 // =====================================================
 // WEB SERVER
 // =====================================================
